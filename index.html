@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelotita loca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
     <style>
-        /* CSS reset: elimina margenes y el borde blanco alrededor del canvas */
+        /* Reinicio: sin margenes ni borde blanco, todo a pantalla completa. */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { width: 100%; height: 100%; overflow: hidden; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #FFE4EC; }
         canvas { display: block; }
 
-        /* Titulo centrado en la parte superior */
+        /* Titulo "sticker": Fredoka, morado con sombra rosa debajo. */
         h1 {
             position: fixed;
-            top: 8px;
+            top: 10px;
             left: 0;
             width: 100%;
             text-align: center;
+            font-family: 'Fredoka', system-ui, sans-serif;
+            font-weight: 600;
+            font-size: 42px;
+            letter-spacing: 1px;
+            color: #5B4B7A;
+            text-shadow: 0 3px 0 #FFB5D0, 0 7px 10px rgba(91, 75, 122, 0.18);
             z-index: 10;
             pointer-events: none;
         }
